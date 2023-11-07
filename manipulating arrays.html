@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>arrays</title>
+</head>
+<body>
+<h3>Manipulating arrays</h3>
+<p>array.concat()</p>
+<script>
+const vowel1=["i","o","u"];
+const vowel2=["a","e"];
+const vowel3=vowel2.concat(vowel1);
+console.log(vowel3);
+
+const a=["Los"];
+const b=["Angeles"];
+console.log(a.concat(b));
+</script>
+<h3>Flatening array</h3>
+<p>array.flat()</p>
+<script>
+const arr=[1,2,[3,4,5]];
+const d=arr.flat();
+console.log(d);
+
+const arr1=[[1,2],[3,4],[5,6]];
+const e=arr1.flat();
+console.log(e);
+</script>
+<h3>Arrays to string</h3>
+<p>array.join()</p>
+<script>
+const decimal = [3, '.', 1, 4, 1, 5, 9];
+const f=decimal.join('');
+console.log(f);
+
+const num=[6,7,8,9,10];
+const g=num.join(" & ");
+console.log(g);
+</script>
+<p>array.reverse()</p>
+<script>
+const n=[984,800,340,178,10];
+n.reverse();
+console.log(n);
+
+const k=["Redmi","Samsung","Pixel","Vivo"];
+k.sort().reverse();
+console.log(k);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>High Order Methods</title>
+</head>
+<body>
+<h3>array.map()</h3>
+<script>
+const a=[1,2,3,4,5];
+const b=a.map((val)=>val*5);
+console.log(b);
+</script>
+<h3>array.filter()</h3>
+<script>
+const name=["subi","kaviya","sujee","sneha","priyadharshini"];
+const c=name.filter((val)=>val.length===5);
+console.log(c);
+</script>
+<h3>array.reduce()</h3>
+<script>
+const num1=[1,-7,20,-4,8,-43];
+const d=num1.filter((num)=>num>0).reduce((r,s)=>r/s);
+console.log(d);
+const num2=[1,4,2,3,5];
+const e=num2.reduce((i,j)=>i*j);
+console.log(e);
+</script>
+<h3>array.every()</h3>
+<script>
+const number=[1,7,9,3,5];
+const f=number.every(val=>val%2!==0);
+console.log(f);
+const n=[19,20,56,67,99];
+const g=n.every(val=>val>18);
+console.log(g);
+</script>
+<h3>array.some()</h3>
+<script>
+let  n1=[8,-45,17,9,-5];
+let h=n1.some((val)=>val<0);
+console.log(h);
+const n2=[90,12,57,81,0];
+const i=n2.some((val)=>val>100);
+console.log(i);
+</script>
+<h3>array.sort()</h3>
+<script>
+const alphabet=["pencil","note","school bag","pen"];
+const alpha=alphabet.sort();
+console.log(alpha);
+</script>
+<h3>array.foreach()</h3>
+<script>
+const animals=["cat","dog","zebra","lion"];
+animals.forEach(function(e){
+console.log(e);
+});
+</script>
+</body>
+</html>

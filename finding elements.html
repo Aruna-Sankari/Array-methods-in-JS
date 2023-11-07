@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Finding Elements</title>
+</head>
+<body>
+<h3>array.index()</h3>
+<script>
+const score=[10,20,30,10,40,20];
+console.log(score.indexOf(30));
+const a=score.indexOf(28);
+console.log(a);
+</script>
+<h3>array.includes()</h3>
+<script>
+const cars=['ford','toyota','bmw','testla'];
+console.log(cars.includes('bmw'));
+</script>
+<h3>array.find()</h3>
+<script>
+const value=[6,9,10,12,78,34];
+let b=value.find(check=>check%2==0);
+console.log(b);
+</script>
+<h3>array.findindex()</h3>
+<script>
+const ranks=[1,6,7,3,10,6];
+let c=ranks.findIndex(h=>h>5);
+console.log(c);
+</script>
+</body>
+</html>
